@@ -5,8 +5,6 @@ import RecipeList from "./RecipeList";
 import RecipeData from "./RecipeData"
 
 function App() {
-  // recipes is an array of objects. use setRecipes to change the state
-  // of recipes. By default it is an array with 2 items in it.
   const [recipes, setRecipes] = useState(RecipeData);
   console.log("recipes: ", recipes)
 
@@ -18,8 +16,7 @@ function App() {
   
 
   const deleteRecipe = (indexToDelete)=> setRecipes((currentRecipes)=>currentRecipes.filter((post, index)=> index !== indexToDelete))
-  // TODO: Add the ability for the <RecipeList /> component to list and delete an existing recipe.
-  // TODO: Add the ability for the <RecipeCreate /> component to create new recipes.
+
 
   
   return (
